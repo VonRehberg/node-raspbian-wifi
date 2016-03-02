@@ -7,7 +7,7 @@ var setting = new WifiSetting();
 
 module.exports = {
 	resetWifi: function(fnCallback) {
-		setting.clear(function(error) {
+		setting.reset(function(error) {
 			if(error) {
 				return fnCallback(error);
 			}

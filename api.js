@@ -1,7 +1,8 @@
 var NetworkInterface = require('./lib/NetworkInterface.js');
 var WifiSetting = require('./lib/WifiSetting.js');
+var child_process = require('child_process');
 
-var interface = new NetworkInterface('wlan0');
+var interface = new NetworkInterface(child_process.exec, 'wlan0');
 var setting = new WifiSetting();
 
 module.exports = {

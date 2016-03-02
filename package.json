@@ -1,0 +1,31 @@
+{
+  "name": "node-raspbian-wifi",
+  "version": "0.0.1",
+  "description": "Node package for wifi handling on raspbian",
+  "repository": {
+  	"type": "git",
+  	"url": "https://github.com/VonRehberg/node-raspbian-wifi"
+  },
+  "scripts": {
+   "test": "mocha --recursive ./lib",
+   "coverage": "istanbul cover _mocha -- -t 8000 --recursive ./lib",
+   "check-coverage": "istanbul check-coverage --statement 90"
+  },
+  "pre-commit": [
+    "test",
+    "coverage",
+    "check-coverage"
+  ],
+  "main": "api.js",
+  "dependencies": {
+    "async": "1.5.2"
+  },
+  "devDependencies": {
+    "pre-commit": "1.0.10",
+  	"chai": "~1.10.0",
+    "mocha": "~1.21.5",
+    "sinon": "~1.15.4",
+    "istanbul": "0.3.17",
+    "mock-fs": "3.7.0"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "node-raspbian-wifi",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Node package for wifi handling on raspbian",
   "repository": {
   	"type": "git",

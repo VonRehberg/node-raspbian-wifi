@@ -11,7 +11,7 @@ module.exports = {
 			if(error) {
 				return fnCallback(error);
 			}
-			interface.restart(function(error) {
+			interface.stop(function(error) {
 				fnCallback(error);
 			});
 		});
